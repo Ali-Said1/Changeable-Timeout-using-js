@@ -57,6 +57,20 @@ body {
   margin: 0;
 }
 
+.btns {
+  display: flex;
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  justify-content: space-between;
+  align-items: center;
+  width: 40vw;
+}
 button {
   box-sizing: border-box;
   width: 150px;
@@ -67,22 +81,21 @@ button {
   box-shadow: 5px 5px 2px red;
   font-weight: 700;
   cursor: pointer;
-  position: absolute;
-  bottom: 50px;
-  transform: translateX(-50%);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
 }
 
 @media (max-width: 767px) {
+  .btns {
+    width: 70vw;
+  }
   button {
-    width: 150px;
-    height: 60px;
+    width: 120px;
+    height: 40px;
   }
 }
 @media (max-width: 420px) {
+  .btns {
+    width: 80vw;
+  }
   button {
     width: 80px;
     height: 30px;
